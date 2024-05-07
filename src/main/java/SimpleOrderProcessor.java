@@ -2,7 +2,6 @@ public class SimpleOrderProcessor extends OrderProcessor {
     @Override
     public void processOrder(Order order) {
         System.out.println("Processing order: " + order.getOrderId());
-        // Logic for processing order
     }
 
     @Override
