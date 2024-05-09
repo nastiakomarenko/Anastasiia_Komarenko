@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -24,7 +25,7 @@ public class UsingSeleniumTest {
         homePage = new HomePage(driver);
         workShiftsPage = new WorkShiftsPage(driver);
     }
-
+    @Description("Test adding and deleting a shift")
     @Test
     public void testAddAndDeleteShift() {
 
