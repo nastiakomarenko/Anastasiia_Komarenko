@@ -1,27 +1,33 @@
-# Проект: Anastasiia_Komarenko
-Цей репозиторій призначений для створення та розвитку проекту Anastasiia_Komarenko.
+# Web Application Testing with Selenium
 
-Структура проекту:
-WebUI: Бранч для розробки користувацького інтерфейсу.
-WebAPI: Бранч для розробки API.
-*_tasks: Бранч для виконання завдань (наприклад, task1, task2, тощо).
-Мови програмування:
-Проект реалізований на Java.
+This project contains automated tests for a web application using Selenium WebDriver and JUnit.
 
-Також у проекті написаний код з використанням деяких дизайн-паттернів, таких як Factory та Template Method. Ми використаємо фабричний метод для створення об'єктів OrderProcessor та OrderValidator, а також шаблонний метод для обробки замовлення в OrderProcessor.
+## Installation and Running
 
-Instruction:
- Перед запуском проекту перевірте чи виконані всі умови :
-*     Встановлене JDK (Java Development Kit).
-*     Встановлений Maven.
-*     Встановлене Allure (https://allurereport.org/docs/gettingstarted-installation/)
-    
-Далі в терміналі запустіть команди :
-* git clone <URL репозиторію>
-* cd <назва-каталогу-проекту>
-* mvn clean test (скомпілює проект та виконає тести)
-* mvn allure:report (згенерує звіт Allure)
+1. Install the Java Development Kit (JDK).
+2. Install Maven if not already installed.
+3. Download the project from the repository.
+4. Ensure that Chrome WebDriver is installed and its path is configured in the environment variables or in the configuration file.
+5. Open the project in your IDE.
+6. Run the tests using the command `mvn test`.
 
-Після виконання попередньої команди звіт буде згенерований у директорії target/site/allure-maven/index.html. Відкрийте цей файл у браузері, щоб переглянути звіт.
+## Project Structure
 
+- `src/main/java`: contains the application code.
+- `src/test/java`: contains the automated tests.
+- `src/test/resources`: contains resources such as data files for tests.
+- `pom.xml`: Maven configuration file.
+
+## How to Add New Tests
+
+1. Create a new Java class in the `src/test/java` package to contain your new test.
+2. Use Selenium WebDriver to interact with the web page and JUnit to write the tests.
+3. Add a new test method to your test class.
+4. Run the tests using the `mvn test` command to ensure your new test passes successfully.
+
+## Additional Resources
+
+- [Selenium WebDriver Documentation](https://www.selenium.dev/documentation/en/)
+- [JUnit Documentation](https://junit.org/junit5/docs/current/user-guide/)
+- [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
 
